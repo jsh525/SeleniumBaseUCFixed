@@ -62,7 +62,7 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 setup(
-    name="seleniumbase",
+    name="seleniumbasefixedUC",
     version=about["__version__"],
     description="A complete web automation framework for end-to-end testing.",
     long_description=long_description,
