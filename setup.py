@@ -21,7 +21,7 @@ except IOError:
     long_description = "A complete library for building end-to-end tests."
 about = {}
 # Get the package version from the seleniumbase/__version__.py file
-with open(os.path.join(this_dir, "seleniumbase", "__version__.py"), "rb") as f:
+with open(os.path.join(this_dir, "seleniumbasefixedUC", "__version__.py"), "rb") as f:
     exec(f.read().decode("utf-8"), about)
 
 if sys.argv[-1] == "publish":
@@ -67,7 +67,7 @@ setup(
     description="A complete web automation framework for end-to-end testing.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/seleniumbase/SeleniumBase",
+    url="https://github.com/seleniumbase/SeleniumBasefixedUC",
     project_urls={
         "Changelog": "https://github.com/seleniumbase/SeleniumBase/releases",
         "Download": "https://pypi.org/project/seleniumbase/#files",
