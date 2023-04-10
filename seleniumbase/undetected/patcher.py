@@ -8,6 +8,7 @@ import string
 import sys
 import time
 import zipfile
+import secrets
 
 logger = logging.getLogger(__name__)
 IS_POSIX = sys.platform.startswith(("darwin", "cygwin", "linux"))
@@ -48,7 +49,7 @@ class Patcher(object):
             Specify main chrome version (rounded, ex: 82) """
         self.force = force
         self.executable_path = None
-        prefix = "undetected"
+        prefix = secrets.token_hex(8)
         if not os.path.exists(self.data_path):
             os.makedirs(self.data_path, exist_ok=True)
         if not executable_path:
